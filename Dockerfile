@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-RUN npm install --only=development
+RUN npm install
 
 RUN npm install --global rimraf && npm install --global parcel-bundler
 
