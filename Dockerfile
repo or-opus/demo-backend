@@ -6,7 +6,7 @@ COPY package*.json ./
 
 RUN npm install --only=development
 
-RUN npm install -g @nestjs/cli
+RUN npm install --global rimraf && npm install --global parcel-bundler
 
 COPY . .
 
