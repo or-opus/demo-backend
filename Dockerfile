@@ -6,8 +6,6 @@ COPY package*.json ./
 
 RUN npm install
 
-RUN npm install --global rimraf && npm install --global parcel-bundler
-
 COPY . .
 
 RUN npm run build
